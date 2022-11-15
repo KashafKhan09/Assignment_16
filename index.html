@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please open console to check answers</h1>
+
+    <script>
+    //Exercise 1
+    let categories=["Health", "Fashion", "Toys", "Electronic", "Tv", "Motorbikes", "Home and lifestyle", "Devices"];
+    categories_half = categories.slice(0, 5);
+
+    console.log(categories_half)
+
+    //Exercise2
+    const str1=["Apple","Banana","Orange","Grapes"];
+    str1.splice(0, 1)
+    const str2=["abc","def","ghf","jkl"];
+    str2.splice(0, 1)
+    const mychildern=str1.concat(str2);
+    
+    console.log(mychildern)
+
+    //Exercise 3
+    const NumericArray=["80","9","700", "40", "1", "5", "200"];
+    NumericArray.sort(function(a, b){return a-b});
+
+    console.log(NumericArray)
+
+    const NumArray=["80","9","700", "40", "1", "5", "200"];
+    NumArray.sort(function(a, b){return b-a});
+
+    console.log(NumArray)
+
+    //Exercise 4
+    const months=["Jan", "March", "April", "Dec"];
+    months.unshift("Feb");
+    months.splice(4, 0, "May", "June")
+    months.splice(6)
+
+    console.log(months)
+
+   //Exercise 5
+   let joinarr = ["Me", "Myfamily"]
+   joinarr.splice( 1, 0, "And")
+
+   console.log(joinarr)
+
+   //Exercise 6
+   var num = 2;
+   if (num > 2 && num < 10){
+     console.log("number is between 2 and 10");
+   } else if (num > 10 && num < 19) {
+    console.log("number is between 10 and 19"); 
+   } else if (num > 19 && num < 30) {
+    console.log("number is between 19 and 30"); 
+   } else {
+    console.log('Sorry try again');
+   }
+   
+    </script>
+</body>
+</html>
